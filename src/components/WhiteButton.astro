@@ -1,0 +1,15 @@
+---
+interface Props {
+  link: string;
+  className?: string;
+}
+
+const { link, className } = Astro.props;
+---
+
+<div class="">
+  <button
+    class={`rounded-[10px] w-full py-3 px-4 bg-white text-black hover:-translate-y-1 transition ease-in-out duration-300 ${className}`}
+    >V I E W</button
+  >
+</div>

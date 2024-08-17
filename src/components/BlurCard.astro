@@ -1,0 +1,31 @@
+---
+import WhiteButton from "./WhiteButton.astro";
+
+interface Props {
+  title: string;
+  description: string;
+  image: string;
+  link: string;
+  className?: string;
+}
+
+const { title, description, image, link, className } = Astro.props;
+---
+
+<a
+  href="/portfolio/cards"
+  class="rounded-xg bg-blurBase px-9 pt-9 pb-12 w-[405px] space-y-8 backdrop-blur-xl"
+>
+  <div class="">
+    <img src={image} alt="" class="h-full rounded-3xl" />
+  </div>
+  <div class="space-y-4">
+    <div class="font-bold text-3xl">{title}</div>
+    <p class="font-thin text-wrap">
+      {description}
+    </p>
+  </div>
+  <div class="">
+    <WhiteButton link="" className="w-[70%]" />
+  </div>
+</a>
