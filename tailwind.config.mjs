@@ -42,6 +42,7 @@ module.exports = {
       },
       colors: {
         blurBase: "rgba(172, 204, 218, 0.07)",
+        active: "#4BD7FB",
       },
     },
   },
