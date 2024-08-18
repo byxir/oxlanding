@@ -5,106 +5,224 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="0xLabs">
-  <div class="overflow-x-hidden relative">
-    <div class="absolute w-[70%] top-0 right-0">
-      <div class="relative">
-        <div
-          class="absolute bg-gradient-to-l from-transparent to-black w-full h-full from-90%"
-        >
+  <div class="parallax overflow-x-hidden relative">
+    <!-- Parallax group for scrolling images -->
+    <div class="parallax__layer parallax__layer--back">
+      <div class="absolute w-[70%] top-0 right-0">
+        <div class="relative">
+          <div
+            class="absolute bg-gradient-to-l from-transparent to-black w-full h-full from-90%"
+          >
+          </div>
+          <div
+            class="absolute bg-gradient-to-b from-transparent to-black w-full h-full from-90%"
+          >
+          </div>
+          <img src="../../astronautPortfolio.png" alt="" class="" />
         </div>
-        <div
-          class="absolute bg-gradient-to-b from-transparent to-black w-full h-full from-90%"
-        >
+      </div>
+      <div class="absolute w-full top-[110vh]">
+        <div class="relative">
+          <div
+            class="absolute bg-gradient-to-l from-transparent to-black w-full h-full from-90%"
+          >
+          </div>
+          <div
+            class="absolute bg-gradient-to-b from-transparent to-black w-full h-full from-90%"
+          >
+          </div>
+          <img src="../../planet.png" alt="" class="" />
         </div>
-
-        <img src="../../astronautPortfolio.png" alt="" class="" />
       </div>
     </div>
-    <main class="mx-auto max-w-desktop py-24 relative h-screen space-y-8">
-      <div class="text-8xl capitalize tracking-widest">PORTFOLIO</div>
-      <p class="font-thin w-[45%]">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat.
-      </p>
-      <div class="-mx-[calc(50vw-50%)]">
-        <PortfolioCarouselNoSnap client:load>
-          <BlurCard
-            title="0xCard"
-            description="0xLabs is a community of developers, designers, and entrepreneurs who are building the future of web3."
-            image="../../cards.png"
-            link="/0xCard"
-          />
-          <BlurCard
-            title="0xCard"
-            description="0xLabs is a community of developers, designers, and entrepreneurs who are building the future of web3."
-            image="../../cards.png"
-            link="/0xCard"
-          />
-          <BlurCard
-            title="0xCard"
-            description="0xLabs is a community of developers, designers, and entrepreneurs who are building the future of web3."
-            image="../../cards.png"
-            link="/0xCard"
-          />
-          <BlurCard
-            title="0xCard"
-            description="0xLabs is a community of developers, designers, and entrepreneurs who are building the future of web3."
-            image="../../cards.png"
-            link="/0xCard"
-          />
-          <BlurCard
-            title="0xCard"
-            description="0xLabs is a community of developers, designers, and entrepreneurs who are building the future of web3."
-            image="../../cards.png"
-            link="/0xCard"
-          />
-        </PortfolioCarouselNoSnap>
+
+    <!-- Parallax group for the main content -->
+    <div class="parallax__group z-10">
+      <div class="parallax__layer parallax__layer--base">
+        <main class="mx-auto max-w-desktop pt-24 relative h-screen space-y-8">
+          <div class="text-8xl capitalize tracking-widest">PORTFOLIO</div>
+          <p class="font-thin w-[45%]">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+          <div class="-mx-[calc(50vw-50%)]">
+            <PortfolioCarouselNoSnap client:load>
+              <BlurCard
+                title="0xCard"
+                description="0xLabs is a community of developers, designers, and entrepreneurs who are building the future of web3."
+                image="../../cards.png"
+                link="/0xCard"
+              />
+              <BlurCard
+                title="0xCard"
+                description="0xLabs is a community of developers, designers, and entrepreneurs who are building the future of web3."
+                image="../../cards.png"
+                link="/0xCard"
+              />
+              <BlurCard
+                title="0xCard"
+                description="0xLabs is a community of developers, designers, and entrepreneurs who are building the future of web3."
+                image="../../cards.png"
+                link="/0xCard"
+              />
+              <BlurCard
+                title="0xCard"
+                description="0xLabs is a community of developers, designers, and entrepreneurs who are building the future of web3."
+                image="../../cards.png"
+                link="/0xCard"
+              />
+              <BlurCard
+                title="0xCard"
+                description="0xLabs is a community of developers, designers, and entrepreneurs who are building the future of web3."
+                image="../../cards.png"
+                link="/0xCard"
+              />
+            </PortfolioCarouselNoSnap>
+          </div>
+          <div class="text-7xl capitalize tracking-widest pt-40">
+            TURNKEY DEVELOPMENT
+          </div>
+          <p class="font-thin w-[45%]">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+          <div class="-mx-[calc(50vw-50%)]">
+            <PortfolioCarouselNoSnap client:load>
+              <BlurCard
+                title="0xCard"
+                description="0xLabs is a community of developers, designers, and entrepreneurs who are building the future of web3."
+                image="../../cards.png"
+                link="/0xCard"
+              />
+              <BlurCard
+                title="0xCard"
+                description="0xLabs is a community of developers, designers, and entrepreneurs who are building the future of web3."
+                image="../../cards.png"
+                link="/0xCard"
+              />
+              <BlurCard
+                title="0xCard"
+                description="0xLabs is a community of developers, designers, and entrepreneurs who are building the future of web3."
+                image="../../cards.png"
+                link="/0xCard"
+              />
+              <BlurCard
+                title="0xCard"
+                description="0xLabs is a community of developers, designers, and entrepreneurs who are building the future of web3."
+                image="../../cards.png"
+                link="/0xCard"
+              />
+              <BlurCard
+                title="0xCard"
+                description="0xLabs is a community of developers, designers, and entrepreneurs who are building the future of web3."
+                image="../../cards.png"
+                link="/0xCard"
+              />
+            </PortfolioCarouselNoSnap>
+          </div>
+          <div class="text-8xl capitalize tracking-widest pt-40">PORTFOLIO</div>
+          <p class="font-thin w-[45%]">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+          <div class="-mx-[calc(50vw-50%)] pb-24">
+            <PortfolioCarouselNoSnap client:load>
+              <BlurCard
+                title="0xCard"
+                description="0xLabs is a community of developers, designers, and entrepreneurs who are building the future of web3."
+                image="../../cards.png"
+                link="/0xCard"
+              />
+              <BlurCard
+                title="0xCard"
+                description="0xLabs is a community of developers, designers, and entrepreneurs who are building the future of web3."
+                image="../../cards.png"
+                link="/0xCard"
+              />
+              <BlurCard
+                title="0xCard"
+                description="0xLabs is a community of developers, designers, and entrepreneurs who are building the future of web3."
+                image="../../cards.png"
+                link="/0xCard"
+              />
+              <BlurCard
+                title="0xCard"
+                description="0xLabs is a community of developers, designers, and entrepreneurs who are building the future of web3."
+                image="../../cards.png"
+                link="/0xCard"
+              />
+              <BlurCard
+                title="0xCard"
+                description="0xLabs is a community of developers, designers, and entrepreneurs who are building the future of web3."
+                image="../../cards.png"
+                link="/0xCard"
+              />
+            </PortfolioCarouselNoSnap>
+          </div>
+        </main>
       </div>
-      <div class="text-6xl capitalize tracking-widest pt-40">
-        TURNKEY DEVELOPMENT
-      </div>
-      <p class="font-thin w-[45%]">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat.
-      </p>
-      <div class="-mx-[calc(50vw-50%)] pb-24">
-        <PortfolioCarouselNoSnap client:load>
-          <BlurCard
-            title="0xCard"
-            description="0xLabs is a community of developers, designers, and entrepreneurs who are building the future of web3."
-            image="../../cards.png"
-            link="/0xCard"
-          />
-          <BlurCard
-            title="0xCard"
-            description="0xLabs is a community of developers, designers, and entrepreneurs who are building the future of web3."
-            image="../../cards.png"
-            link="/0xCard"
-          />
-          <BlurCard
-            title="0xCard"
-            description="0xLabs is a community of developers, designers, and entrepreneurs who are building the future of web3."
-            image="../../cards.png"
-            link="/0xCard"
-          />
-          <BlurCard
-            title="0xCard"
-            description="0xLabs is a community of developers, designers, and entrepreneurs who are building the future of web3."
-            image="../../cards.png"
-            link="/0xCard"
-          />
-          <BlurCard
-            title="0xCard"
-            description="0xLabs is a community of developers, designers, and entrepreneurs who are building the future of web3."
-            image="../../cards.png"
-            link="/0xCard"
-          />
-        </PortfolioCarouselNoSnap>
-      </div>
-    </main>
+    </div>
   </div>
 </Layout>
+
+<style>
+  .parallax {
+    height: 500px;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-perspective: 300px;
+    perspective: 300px;
+  }
+
+  .parallax__group {
+    position: relative;
+    height: 500px;
+    height: 100vh;
+    /* -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d; */
+  }
+
+  .parallax__layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  /* .parallax__group {
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+  } */
+
+  /* .parallax__layer--fore {
+    -webkit-transform: translateZ(90px) scale(0.7);
+    transform: translateZ(90px) scale(0.7);
+    z-index: 1;
+  } */
+
+  .parallax__layer--base {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    z-index: 4;
+  }
+
+  .parallax__layer--back {
+    -webkit-transform: translateZ(-300px) scale(2);
+    transform: translateZ(-300px) scale(2);
+    z-index: 3;
+  }
+
+  /* .parallax__layer--deep {
+    -webkit-transform: translateZ(-600px) scale(3);
+    transform: translateZ(-600px) scale(3);
+    z-index: 2;
+  } */
+</style>
